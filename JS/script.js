@@ -3,24 +3,30 @@ let alan = document.getElementById('alan');
 var contador = 0;
 let translate = 0;
 let transString = 0;
+
+
 setTimeout(function(){ 
     card.style.transition = 'all .5s linear'
     card.style.transform ='translateX(-100%)';
-}, 3000);
+}, 8000);
 
 
 // CARD 2
 function correctCard2(){
-    contador = contador + 1;
+    
+    
     let option1 = document.getElementsByClassName('option1')[0];
     option1.style.backgroundColor = 'green';
+    contador = contador + 1;
     alan.style.transition = 'transform .3s linear';
     translate = translate + 100;
     alan.style.transform = `translateX(${translate}%)`;
     setTimeout(function(){
         card.style.transition = 'all .5s linear';
         card.style.transform ='translateX(-200%)';
-    }, 300)
+    }, 100)
+    
+    
 }
 function wrong1Card2(){
     let option2 = document.getElementsByClassName('option2')[0];

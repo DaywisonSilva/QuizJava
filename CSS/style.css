@@ -93,7 +93,6 @@ section .container{
 section .card{
     width: 100%;
     background-color: rgb(179, 179, 179);
-    animation: card 60s linear 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,6 +106,7 @@ section .card .question{
     width: 100%;
     height: 30%;
     border-radius: 20px 20px 10px 10px;
+    font-family: 'Roboto', Helvetica, sans-serif;
 }
 section .card .options{
     display: flex;
@@ -124,6 +124,8 @@ section .card .options span{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    font-family: 'Roboto', Helvetica, sans-serif;
 }
 section .card-one{
     display: flex;
@@ -150,69 +152,6 @@ section .last-card{
     font-family: 'Roboto', Helvetica, sans-serif;
     font-size: 2em;
 }
-
-/* @keyframes card{
-    0%{
-        transform: translateX(0);
-    }
-    10%{
-        transform: translateX(0);
-    }
-    11%{
-        transform: translateX(-100%);
-    }
-    20%{
-        transform: translateX(-100%);
-    }
-    21%{
-        transform: translateX(-200%);
-    }
-    30%{
-        transform: translateX(-200%);
-    }
-    31%{
-        transform: translateX(-300%);
-    }
-    40%{
-        transform: translateX(-300%);
-    }
-    41%{
-        transform: translate(-400%);
-    }
-    50%{
-        transform: translate(-400%);
-    }
-    51%{
-        transform: translate(-500%);
-    }
-    60%{
-        transform: translate(-500%);
-    }
-    61%{
-        transform: translate(-600%);
-    }
-    70%{
-        transform: translate(-600%);
-    }
-    71%{
-        transform: translate(-700%);
-    }
-    80%{
-        transform: translate(-700%);
-    }
-    81%{
-        transform: translate(-800%);
-    }
-    90%{
-        transform: translate(-800%);
-    }
-    91%{
-        transform: translate(-900%);
-    }
-    100%{
-        transform: translate(-900%);
-    }
-} */
 section .card:nth-child(2){
     background-color: bisque;
 }
