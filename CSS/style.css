@@ -326,6 +326,11 @@ footer p{
         width: 60%;
     }
 }
+@media(max-height:700px){
+    body{
+        height: 130vh;
+    }
+}
 @media (min-width: 1050px){
     section{
         width: 40%;
