@@ -8,7 +8,7 @@ let transString = 0;
 setTimeout(function(){ 
     card.style.transition = 'all .5s linear'
     card.style.transform ='translateX(-100%)';
-}, 8000);
+}, 1000);
 
 
 // CARD 2
@@ -304,6 +304,8 @@ function correctCard9(){
     alan.style.transition = 'transform .3s linear';
     translate = translate + 100;
     alan.style.transform = `translateX(${translate}%)`;
+    var bandeira = document.getElementById('bandeira');
+    bandeira.style.color = 'green';
     setTimeout(function(){
         card.style.transition = 'all .5s linear';
         card.style.transform ='translateX(-900%)';
