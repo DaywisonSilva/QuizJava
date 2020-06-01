@@ -8,7 +8,7 @@ let transString = 0;
 setTimeout(function(){ 
     card.style.transition = 'all .5s linear'
     card.style.transform ='translateX(-100%)';
-}, 1000);
+}, 8000);
 
 
 // CARD 2
