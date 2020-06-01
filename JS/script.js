@@ -8,7 +8,7 @@ let transString = 0;
 setTimeout(function(){ 
     card.style.transition = 'all .5s linear'
     card.style.transform ='translateX(-100%)';
-}, 8000);
+}, 6000);
 
 
 // CARD 2
@@ -304,17 +304,19 @@ function correctCard9(){
     alan.style.transition = 'transform .3s linear';
     translate = translate + 100;
     alan.style.transform = `translateX(${translate}%)`;
-    var bandeira = document.getElementById('bandeira');
-    bandeira.style.color = 'green';
     setTimeout(function(){
+        verificar();
         card.style.transition = 'all .5s linear';
         card.style.transform ='translateX(-900%)';
-        verificar();
     }, 300)
     contador++;
     function verificar(){
         if(contador === 8){
-            alert('Parabéns, você ajudou e o Prof. Alan conseguiu sua tão sonhada certificação Java!')
+            var bandeira = document.getElementById('bandeira');
+            bandeira.style.color = 'green';
+            bandeira.style.fontSize = '2em';
+            bandeira.style.transition = 'all .5s linear';
+            alert('Parabéns, você ajudou e o Prof. Alan conseguiu sua tão sonhada certificação Java!');
         }else{
             alert(`Você acertou ${contador} de 8 questões. Não desista, continue tentando e se torne mestre em Java.`)
         }
